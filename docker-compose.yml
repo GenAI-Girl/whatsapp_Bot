@@ -1,0 +1,12 @@
+version: '1.0'
+services:
+  application:
+    image: 566373416292.dkr.ecr.us-east-1.amazonaws.com/whatsappbot:latest
+    ports:
+      - "5000:5000"
+    environment:
+      - FROM
+      - CHATGPT_API_KEY
+      - TWILIO_ACCOUNT_SID
+      - TWILIO_AUTH_TOKEN
+
